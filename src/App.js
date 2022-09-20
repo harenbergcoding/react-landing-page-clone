@@ -1,4 +1,10 @@
 import { css } from '@emotion/react';
+import icon1 from './images/icon-1-home-features.svg';
+import icon2 from './images/icon-2-home-features.svg';
+import icon3 from './images/icon-3-home-features.svg';
+import icon4 from './images/icon-4-home-features.svg';
+import icon5 from './images/icon-5-home-features.svg';
+import icon6 from './images/icon-6-home-feature.svg';
 import { ReactComponent as Logo } from './images/pflanzer-logo.svg';
 import imagePlatform from './images/planzer-io-platform.svg';
 /** @jsxImportSource @emotion/react */
@@ -20,6 +26,10 @@ const logoStyles = css`
   width: 150px;
   height: 33.8px;
   /* font-size: 10px; */
+`;
+
+const icon = css`
+  border-radius: 25px;
 `;
 
 const headerStyles = css`
@@ -78,6 +88,13 @@ const h1 = css`
 
 const h2 = css`
   font-size: 36px;
+  font-weight: 700;
+  font-family: Thicccboi, sans-serif;
+  color: #0b0a33;
+`;
+
+const h3 = css`
+  font-size: 28px;
   font-weight: 700;
   font-family: Thicccboi, sans-serif;
   color: #0b0a33;
@@ -178,17 +195,19 @@ const grid = css`
 `;
 
 const gridBox = css`
-  border: 1px solid black;
-  border-radius: 12px;
+  /* border: 1px solid black; */
+  border-radius: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 `;
 
 const cardHome = css`
   width: 260px;
   height: 310px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  display: block;
 `;
 
 // const test = css`display: block, margin: auto`;
@@ -261,22 +280,69 @@ function App() {
         <br />
         <div css={grid}>
           <div css={gridBox}>
-            <div css={cardHome}>a</div>
+            <div css={cardHome}>
+              <img src={icon1} css={icon} alt="" />
+              <h3 css={h3}>Organize your day</h3>
+              <p css={p}>
+                Organize your tasks across multiple applications, and don't
+                loose track of your day
+              </p>
+            </div>
           </div>
           <div css={gridBox}>
-            <div css={cardHome}>a</div>
+            <div css={cardHome}>
+              <img src={icon2} css={icon} alt="" />
+              <h3 css={h3}>Track progress</h3>
+              <p css={p}>
+                Planzer.io can easily track your goals by assigning tasks. Of
+                course, you will follow your progress as well.
+              </p>
+            </div>
           </div>
           <div css={gridBox}>
-            <div css={cardHome}>a</div>
+            <div css={cardHome}>
+              {' '}
+              <img src={icon3} css={icon} alt="" />
+              <h3 css={h3}>Set goals</h3>
+              <p css={p}>
+                Once you set specific goals with time frames, you can organize
+                and manage your workload.
+              </p>
+            </div>
           </div>
           <div css={gridBox}>
-            <div css={cardHome}>a</div>
+            <div css={cardHome}>
+              {' '}
+              <img src={icon4} css={icon} alt="" />
+              <h3 css={h3}>Limit distractions</h3>
+              <p css={p}>
+                Concentrating on work for extended periods in an organized
+                workspace is much easier.
+              </p>
+            </div>
           </div>
           <div css={gridBox}>
-            <div css={cardHome}>a</div>
+            <div css={cardHome}>
+              {' '}
+              <img src={icon5} css={icon} alt="" />
+              <h3 css={h3}>Calendar overview</h3>
+              <p css={p}>
+                Planzer.io keeps you aware of what meetings and due dates you
+                have coming up in your schedule.
+              </p>
+            </div>
           </div>
           <div css={gridBox}>
-            <div css={cardHome}>a</div>
+            <div css={cardHome}>
+              {' '}
+              <img src={icon6} css={icon} alt="" />
+              <h3 css={h3}>Practice accountability</h3>
+              <p css={p}>
+                Accountability includes keeping your to-do list in mind. You
+                should evaluate your goal list, reflect on your progress and
+                identify the steps you need to take.
+              </p>
+            </div>
           </div>
         </div>
         <br />
