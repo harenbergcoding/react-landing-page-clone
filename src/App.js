@@ -142,11 +142,10 @@ const nativeIntegrationsStyles = css`
 const imageNativePartingLine = css`
   border-bottom: 1px solid grey;
   width: 1100px;
-  display: flex;
-  justify-content: center;
-  margin-left: 380px;
   padding-bottom: 150px;
   margin-bottom: 150px;
+  text-align: center;
+  margin: auto;
 `;
 
 const sectionBenefitStyles = css`
@@ -159,10 +158,37 @@ const sectionBenefitStyles = css`
     margin-bottom: 20px;
   }
 
+  div:first-child {
+    margin-top: 220px;
+  }
+
   div:nth-child(3) {
     width: 525px;
     margin: auto;
   }
+`;
+const grid = css`
+  display: grid;
+  grid-template-columns: 374px 374px 374px;
+  grid-template-rows: 440px 440px 440px;
+  width: 1198;
+  height: 858;
+  row-gap: 20px;
+  column-gap: 20px;
+`;
+
+const gridBox = css`
+  border: 1px solid black;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const cardHome = css`
+  width: 260px;
+  height: 310px;
+  border: 1px solid black;
 `;
 
 // const test = css`display: block, margin: auto`;
@@ -233,6 +259,26 @@ function App() {
         </div>
         <br />
         <br />
+        <div css={grid}>
+          <div css={gridBox}>
+            <div css={cardHome}>a</div>
+          </div>
+          <div css={gridBox}>
+            <div css={cardHome}>a</div>
+          </div>
+          <div css={gridBox}>
+            <div css={cardHome}>a</div>
+          </div>
+          <div css={gridBox}>
+            <div css={cardHome}>a</div>
+          </div>
+          <div css={gridBox}>
+            <div css={cardHome}>a</div>
+          </div>
+          <div css={gridBox}>
+            <div css={cardHome}>a</div>
+          </div>
+        </div>
         <br />
         {/* <div css={test}>
           <img src={imagePlatform} alt="" />
