@@ -19,6 +19,9 @@ root.render(
           margin: 0px;
           background-color: #f3f5ff;
         }
+        a {
+          text-decoration: none;
+        }
       `}
     />
 

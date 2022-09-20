@@ -1,7 +1,8 @@
-/** @jsxImportSource @emotion/react */
-import './App.css';
 import { css } from '@emotion/react';
 import { ReactComponent as Logo } from './images/pflanzer-logo.svg';
+import imagePlatform from './images/planzer-io-platform.svg';
+/** @jsxImportSource @emotion/react */
+import imageNativeIntegrations from './images/planzer-native-integrations.png';
 
 const mainStyles = css`
   /* box-sizing: border-box; */
@@ -28,7 +29,7 @@ const headerStyles = css`
   padding: 52px 0px 50px;
   width: 1198px;
   height: 50px;
-  margin-left: 160px;
+  margin-left: 360px;
   background-color: #f3f5ff;
 `;
 
@@ -75,10 +76,24 @@ const h1 = css`
   color: #0b0a33;
 `;
 
+const h2 = css`
+  font-size: 36px;
+  font-weight: 700;
+  font-family: Thicccboi, sans-serif;
+  color: #0b0a33;
+`;
+
+const p = css`
+  opacity: 0.6;
+  font-size: 17px;
+  font-family: Thicccboi, sans-serif;
+  line-height: 35px;
+`;
+
 const heroSectionStyles = css`
   display: flex;
   justify-content: center;
-
+  margin-top: 50px;
   > div {
     padding-top: 15px;
   }
@@ -105,6 +120,52 @@ const heroDivStyles = css`
     padding-right: 24px;
   }
 `;
+
+const heroImageStyles = css`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+`;
+
+const nativeIntegrationsStyles = css`
+  opacity: 0.6;
+  font-size: 20px;
+  font-family: Thicccboi, sans-serif;
+  margin-top: 50px;
+
+  > * {
+    display: flex;
+    justify-content: center;
+  }
+`;
+
+const imageNativePartingLine = css`
+  border-bottom: 1px solid grey;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  margin-left: 380px;
+  padding-bottom: 150px;
+  margin-bottom: 150px;
+`;
+
+const sectionBenefitStyles = css`
+  display: block;
+
+  > div {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  div:nth-child(3) {
+    width: 525px;
+    margin: auto;
+  }
+`;
+
+// const test = css`display: block, margin: auto`;
 
 function App() {
   return (
@@ -146,17 +207,38 @@ function App() {
       <br />
       <br />
       <br />
+      <div css={heroImageStyles}>
+        <img src={imagePlatform} alt="" />
+      </div>
       <br />
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      {/* </div> */}
+      <div css={nativeIntegrationsStyles}>
+        <div>
+          <p>Here are some of our native integrations</p>
+        </div>
+        <div>
+          <img src={imageNativeIntegrations} alt="" />
+        </div>
+        <div css={imageNativePartingLine} />
+        <div css={sectionBenefitStyles}>
+          <div>Benefits</div>
+          <div css={h2}>You'll never miss a deadline!</div>
+          <div css={p}>
+            With Planzer.io, you will never miss a deadline because you lost
+            track of your tasks. You can easily organize your day, track your
+            goals and become more productive.
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        {/* <div css={test}>
+          <img src={imagePlatform} alt="" />
+        </div> */}
+        <br />
+      </div>
     </div>
   );
 }
