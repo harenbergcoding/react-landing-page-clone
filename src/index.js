@@ -17,7 +17,7 @@ root.render(
         }
         body {
           margin: 0px;
-          background-color: green;
+          background-color: #f3f5ff;
         }
       `}
     />

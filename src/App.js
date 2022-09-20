@@ -45,7 +45,7 @@ const navStyles = css`
   }
 `;
 
-const navStylesRight = css`
+const navRightStyles = css`
   font-family: Thicccboi, sans-serif;
   color: #0b0a33;
   text-decoration: none;
@@ -68,6 +68,44 @@ const navStylesRight = css`
   }
 `;
 
+const h1 = css`
+  font-size: 56px;
+  font-weight: 700;
+  font-family: Thicccboi, sans-serif;
+  color: #0b0a33;
+`;
+
+const heroSectionStyles = css`
+  display: flex;
+  justify-content: center;
+
+  > div {
+    padding-top: 15px;
+  }
+
+  > div > p {
+    padding: 10 25 0 25;
+    width: 650px;
+    opacity: 0.6;
+    font-size: 17px;
+    font-family: Thicccboi, sans-serif;
+    line-height: 35px;
+  }
+`;
+
+const heroDivStyles = css`
+  width: 700px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  > h1 {
+    margin: 0 0 24;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+`;
+
 function App() {
   return (
     <div className="App" css={mainStyles}>
@@ -81,7 +119,7 @@ function App() {
           <a href="#x">Use Cases</a>
         </nav>
 
-        <div className="navRight" css={navStylesRight}>
+        <div className="navRight" css={navRightStyles}>
           <a href="#x">Sign In</a>
           <a href="#x" css={button}>
             Get Started ►
@@ -90,14 +128,20 @@ function App() {
       </header>
       <br />
       <br />
-      <h1>Stop losing track of your tasks</h1>
-      <p>
-        Planzer.io lets you plan your day with tasks from multiple project
-        management tools in one simple view, to help you be more productive.
-      </p>
-      <a href="#a" css={button}>
-        Start planning your day ►
-      </a>
+      <section css={heroSectionStyles}>
+        <div className="heroSection" css={heroDivStyles}>
+          <h1 css={h1}>Stop losing track of your tasks</h1>
+          <p>
+            Planzer.io lets you plan your day with tasks from multiple project
+            management tools in one simple view, to help you be more productive.
+          </p>
+          <br />
+          <br />
+          <a href="#a" css={button}>
+            Start planning your day ►
+          </a>
+        </div>
+      </section>
       <br />
       <br />
       <br />
