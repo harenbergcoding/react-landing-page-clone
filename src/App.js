@@ -39,7 +39,7 @@ const headerStyles = css`
   padding: 52px 0px 50px;
   width: 1198px;
   height: 50px;
-  margin-left: 360px;
+  margin-left: 260px;
   background-color: #f3f5ff;
 `;
 
@@ -190,8 +190,9 @@ const grid = css`
   grid-template-rows: 440px 440px 440px;
   width: 1198;
   height: 858;
-  row-gap: 20px;
-  column-gap: 20px;
+  /* row-gap: 20px;
+  column-gap: 20px; */
+  grid-gap: 20px;
 `;
 
 const gridBox = css`
@@ -201,6 +202,7 @@ const gridBox = css`
   justify-content: center;
   align-items: center;
   background-color: white;
+  grid-auto-flow: row;
 `;
 
 const cardHome = css`
