@@ -25,7 +25,6 @@ const button = css`
 const logoStyles = css`
   width: 150px;
   height: 33.8px;
-  /* font-size: 10px; */
 `;
 
 const icon = css`
@@ -190,13 +189,10 @@ const grid = css`
   grid-template-rows: 440px 440px 440px;
   width: 1198;
   height: 858;
-  /* row-gap: 20px;
-  column-gap: 20px; */
   grid-gap: 20px;
 `;
 
 const gridBox = css`
-  /* border: 1px solid black; */
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -208,11 +204,10 @@ const gridBox = css`
 const cardHome = css`
   width: 260px;
   height: 310px;
+  font-weight: 500;
   /* border: 1px solid black; */
   display: block;
 `;
-
-// const test = css`display: block, margin: auto`;
 
 function App() {
   return (
